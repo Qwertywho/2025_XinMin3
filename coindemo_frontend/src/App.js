@@ -9,7 +9,7 @@ function App() {
   const handleCalculateChange = async (targetAmount, coinDenominations) => {
     try {
       const response = await axios.post(
-        "http://backend:8080/api/coins/minCoins",
+        "http://localhost:8080/api/coins/minCoins",
         {
           targetAmount: parseFloat(targetAmount),
           coinDenominations: coinDenominations,
