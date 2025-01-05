@@ -2,7 +2,7 @@
 **For front-end code:**\
 Node_modules has been removed. After downloading the front-endfolder, run ‘npm install’ in the project directory.\
 **For back-end code:**\
-Download the 4CoinDemo_backend folder.
+Download the coindemo_backend folder and rename it to: 4CoinDemo_backend folder (for docker-compose.yml to run).
 To run the react-app without docker containerization: 
 1)	First, in the terminal navigate to the CoinDemo_backend folder project directory. Run the Spring Boot application first (mvn spring-boot: run). The output in the terminal should indicate that the server is running on port 8080.
 2)	Next, navigate to the front-end project directory, and run ‘npm start’. React development server should now be starting up. The default browser should automatically goes to http://localhost:3000.
