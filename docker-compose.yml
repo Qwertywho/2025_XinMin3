@@ -1,0 +1,18 @@
+services:
+  backend:
+    #docker-build
+    build: 
+      context: ./4CoinDemo_backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build:
+      context: ./coindemo_frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  
+    depends_on:
+      - backend
+    #tty: true
